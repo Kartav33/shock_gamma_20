@@ -1,0 +1,51 @@
+!!! Electric field (0: no), noreturn, ndimscatt
+0, 0, 2
+!!! ncell
+8000
+!!! cdt/dx
+0.99
+!!! xmin, xmax, xshock
+0.0, 800.0, 600.0
+!!! #species, max part per proc, inj cell
+2, 1000000
+!!! ions
+! - ppc, inj step
+20, 10
+! - rqm, T, b
+1., 0.0, -0.99875
+!!! electrons
+! - ppc, inj step
+2, 10
+! - rqm, T, b
+-1., 0.0, -0.99875
+!!! nu0i, nu0e, p0, lamda0, B0, Lsh, bwinf
+1, 1, 100., 0., 0.0, 0.0, 200, -0.99875
+!!! diags
+7,  10000, 10
+charge
+Txx
+Tyy
+Tzz
+Jx
+Ex
+bw
+!!! diag2
+4, 0.0, 800, 100, 100
+px
+0., 0.
+0., 0.
+py
+0., 0.
+0., 0.
+p0
+1., 1.
+1., 1.
+kn
+0., 0.
+0., 0.
+!!! save
+10000 0
+!!! profiles
+1000000
+!!! Nstep
+19500000
